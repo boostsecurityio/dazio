@@ -113,8 +113,7 @@ brew uninstall dazio
 
 ## Platforms and support
 
-macOS (Apple Silicon and Intel) and Linux (arm64 and amd64). Windows is not
-supported.
+macOS (Apple Silicon and Intel) and Linux (arm64 and amd64). Windows support is in the works.
 
 Bugs and questions go to this repository's
 [Issues](https://github.com/boostsecurityio/dazio/issues). The source is
