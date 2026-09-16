@@ -32,16 +32,24 @@ Homebrew, on macOS or Linux:
 brew install boostsecurityio/tap/dazio
 ```
 
-Or download the archive for your platform from the
-[Releases](https://github.com/boostsecurityio/dazio/releases) page:
+Without Homebrew, on macOS or Linux:
 
 ```sh
-os=$(uname -s | tr '[:upper:]' '[:lower:]')
-arch=$(uname -m | sed 's/^x86_64$/amd64/; s/^aarch64$/arm64/')
-tag=$(gh release view --repo boostsecurityio/dazio --json tagName -q .tagName)
-gh release download "$tag" --repo boostsecurityio/dazio \
-  --pattern "dazio_${tag#v}_${os}_${arch}.tar.gz" --output - | tar xz dazio
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/boostsecurityio/dazio/HEAD/install.sh)"
 ```
+
+That installs the [latest release](https://github.com/boostsecurityio/dazio/releases)
+into `~/.local/bin`, checking its checksum against the release's
+`checksums.txt`. Run it again to upgrade.
+
+Or with [mise](https://mise.jdx.dev):
+
+```sh
+mise use -g github:boostsecurityio/dazio
+```
+
+A mise upgrade replaces the binary without telling the daemon, so run
+`dazio service restart` after one if you have continuous protection on.
 
 ## First scan
 
@@ -108,7 +116,7 @@ stay with you.
 dazio safe-pkg disable
 dazio reset --yes
 dazio service uninstall
-brew uninstall dazio
+brew uninstall dazio        # or, installed by the script: rm ~/.local/bin/dazio
 ```
 
 ## Platforms and support
