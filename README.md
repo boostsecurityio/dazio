@@ -39,8 +39,8 @@ Without Homebrew, on macOS or Linux:
 ```
 
 That installs the [latest release](https://github.com/boostsecurityio/dazio/releases)
-into `~/.local/bin`, checking its checksum and
-— when you have `cosign` — its signature. Run it again to upgrade.
+into `~/.local/bin`, checking its checksum against the release's
+`checksums.txt`. Run it again to upgrade.
 
 Or with [mise](https://mise.jdx.dev):
 

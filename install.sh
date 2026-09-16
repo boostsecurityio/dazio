@@ -59,6 +59,22 @@ if [ -n "$existing" ]; then
   esac
 fi
 
+# Homebrew is the recommended install, so someone who has brew and lands here
+# anyway is asked once, on a first install only. Enter is yes (ADR-0008), and a
+# read that finds no terminal answers the same way.
+if [ -z "$existing" ] && command -v brew > /dev/null 2>&1; then
+  echo "You have Homebrew, and the recommended install is:"
+  echo
+  echo "  brew install boostsecurityio/tap/dazio"
+  echo
+  printf 'Install with this script instead? [Y/n] '
+  read -r reply < /dev/tty 2> /dev/null || reply=
+  case "$reply" in
+    [Nn]*) echo "Nothing installed."; exit 0 ;;
+  esac
+  echo
+fi
+
 # The /releases/latest redirect names the tag, so no API call, no token, no jq.
 if [ -n "${DAZIO_VERSION:-}" ]; then
   version=${DAZIO_VERSION#v}
@@ -93,6 +109,9 @@ curl -fsSL -o "$tmp/$archive" "$repo/releases/download/$tag/$archive" \
 curl -fsSL -o "$tmp/checksums.txt" "$repo/releases/download/$tag/checksums.txt" \
   || die "no checksums.txt in release $tag"
 
+# A cosign on PATH is taken at its word: a bad signature stops the install. No
+# cosign, no signature check and nothing said about it — the checksum below is
+# what everyone else gets, and a warning nobody can act on is just noise.
 if command -v cosign > /dev/null 2>&1; then
   curl -fsSL -o "$tmp/checksums.txt.cosign.bundle" \
     "$repo/releases/download/$tag/checksums.txt.cosign.bundle" \
@@ -102,14 +121,6 @@ if command -v cosign > /dev/null 2>&1; then
     --certificate-identity "$workflow@refs/tags/endpoint/$tag" \
     --certificate-oidc-issuer "$oidc_issuer" \
     || die "checksums.txt for $tag is not signed by the release workflow (or this cosign is too old to read a v0.3 bundle); not installing"
-else
-  echo "cosign is not installed, so the signature was not checked. To check it by hand"
-  echo "(this script's downloads do not outlive it):"
-  echo "  curl -fsSLO $repo/releases/download/$tag/checksums.txt"
-  echo "  curl -fsSLO $repo/releases/download/$tag/checksums.txt.cosign.bundle"
-  echo "  cosign verify-blob checksums.txt --bundle checksums.txt.cosign.bundle \\"
-  echo "    --certificate-identity '$workflow@refs/tags/endpoint/$tag' \\"
-  echo "    --certificate-oidc-issuer $oidc_issuer"
 fi
 
 # -c reads the filename out of the line, so it runs where the archive is.
