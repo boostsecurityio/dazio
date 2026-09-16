@@ -60,19 +60,19 @@ if [ -n "$existing" ]; then
 fi
 
 # Homebrew is the recommended install, so someone who has brew and lands here
-# anyway is asked once, on a first install only. Enter is yes (ADR-0008), and a
-# read that finds no terminal answers the same way.
+# anyway is asked once, on a first install only. Enter takes the recommendation,
+# and a read that finds no terminal answers the same way.
 if [ -z "$existing" ] && command -v brew > /dev/null 2>&1; then
   echo "You have Homebrew, and the recommended install is:"
   echo
   echo "  brew install boostsecurityio/tap/dazio"
   echo
-  printf 'Install with this script instead? [Y/n] '
+  printf 'Install with this script instead? [y/N] '
   read -r reply < /dev/tty 2> /dev/null || reply=
   case "$reply" in
-    [Nn]*) echo "Nothing installed."; exit 0 ;;
+    [Yy]*) echo ;;
+    *) echo "Nothing installed."; exit 0 ;;
   esac
-  echo
 fi
 
 # The /releases/latest redirect names the tag, so no API call, no token, no jq.
