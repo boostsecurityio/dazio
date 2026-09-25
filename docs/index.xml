@@ -1,0 +1,1681 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dazio – Docs</title>
+    <link>https://boostsecurityio.github.io/dazio/docs/</link>
+    <description>Recent content in Docs on Dazio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="https://boostsecurityio.github.io/dazio/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Install</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/install/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Supported platforms&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;supported-platforms&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#supported-platforms&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;macOS, Apple Silicon and Intel&lt;/li&gt;
+&lt;li&gt;Linux, amd64 and arm64&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Windows is not supported yet. On Linux, the always-on daemon runs as a
+systemd user service, so it needs a systemd user session (&lt;code&gt;systemctl --user&lt;/code&gt;).
+On macOS it runs as a LaunchAgent.&lt;/p&gt;
+&lt;h2&gt;Homebrew&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;homebrew&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#homebrew&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Recommended, on macOS or Linux:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install boostsecurityio/tap/dazio&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Upgrade with:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew upgrade dazio&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On macOS, the upgrade restarts a running daemon onto the new binary for you.&lt;/p&gt;
+&lt;p&gt;On Linux, the login service still points at the old version&amp;rsquo;s binary, which
+the upgrade removes. If you have continuous protection on, point it at the new
+binary after upgrading:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dazio service install&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Install script&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;install-script&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#install-script&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Without Homebrew, on macOS or Linux:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/boostsecurityio/dazio/HEAD/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The script installs the
+&lt;a href=&#34;https://github.com/boostsecurityio/dazio/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;latest release&lt;/a&gt; into
+&lt;code&gt;~/.local/bin/dazio&lt;/code&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It checks the download&amp;rsquo;s sha256 against the release&amp;rsquo;s &lt;code&gt;checksums.txt&lt;/code&gt; and
+installs nothing on a mismatch.&lt;/li&gt;
+&lt;li&gt;If &lt;a href=&#34;https://github.com/sigstore/cosign&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cosign&lt;/a&gt; is installed, it also
+verifies the signature on &lt;code&gt;checksums.txt&lt;/code&gt; and stops if that fails.&lt;/li&gt;
+&lt;li&gt;If &lt;code&gt;~/.local/bin&lt;/code&gt; is not on your &lt;code&gt;PATH&lt;/code&gt;, it prints the &lt;code&gt;export PATH=…&lt;/code&gt; line
+to add.&lt;/li&gt;
+&lt;li&gt;If you have Homebrew, it asks you to confirm before installing, since
+Homebrew is the recommended route. If Dazio is already installed with
+Homebrew, it tells you to run &lt;code&gt;brew upgrade dazio&lt;/code&gt; and changes nothing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Two environment variables change what it installs:&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Variable&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DAZIO_INSTALL_DIR&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Install into this directory instead of &lt;code&gt;~/.local/bin&lt;/code&gt;.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DAZIO_VERSION&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Install this version, such as &lt;code&gt;0.1.12&lt;/code&gt;, instead of the latest.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;To upgrade, run the same command again. It replaces the binary and restarts a
+running daemon onto it.&lt;/p&gt;
+&lt;h2&gt;mise&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mise&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mise&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With &lt;a href=&#34;https://mise.jdx.dev&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mise&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mise use -g github:boostsecurityio/dazio&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A mise upgrade installs the new version without telling the daemon. If you
+have continuous protection on, run one of these after upgrading.&lt;/p&gt;
+&lt;p&gt;On macOS, restart the daemon onto the new binary:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dazio service restart&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;On Linux, the login service still points at the old version&amp;rsquo;s binary, so
+point it at the new one:&lt;/p&gt;
+&lt;div class=&#34;dazio-terminal not-prose&#34;&gt;
+  &lt;div class=&#34;dazio-terminal-bar&#34; aria-hidden=&#34;true&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;hx:relative hx:group/code&#34;&gt;
+    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dazio service install&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Next&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;next&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#next&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;../quick-start/&#34;&gt;Quick start&lt;/a&gt; runs your first scan.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Quick start</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/quick-start/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Dazio can run once and hand you a report, or stay on in the background and
+check every package install before it lands. Start with the scan either way.&lt;/p&gt;
+&lt;h2&gt;One-time scan&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;one-time-scan&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#one-time-scan&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;The first scan is guided. It takes about two minutes and prints what it found
+on this machine: malware matches, exposed secrets and risky settings. It asks
+you to accept the terms, registers this installation and downloads the malware
+feed so it can check your packages.&lt;/p&gt;
+&lt;p&gt;It ends with one offer: turn on continuous protection. Declining installs
+nothing. Later runs of &lt;code&gt;dazio scan&lt;/code&gt; are terse and remind you of &lt;code&gt;dazio protect&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To see the last result again:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;A sample of what it prints:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/output/result.png&#34; alt=&#34;Sample output of dazio result: a malware match, secrets by type, a misconfiguration and the installed-component inventory&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;For a scan that touches nothing outside this process, run it with &lt;code&gt;--local&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan --local&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;It fetches, registers and saves nothing. Without a malware feed already on
+this machine, it reports malware as not checked.&lt;/p&gt;
+&lt;h2&gt;Always-on protection&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;always-on-protection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#always-on-protection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Accept the offer at the end of the first scan, or run:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio protect&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;It shows each part and what it means before anything is written:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a background daemon, started at login, that rescans every hour and on file
+changes&lt;/li&gt;
+&lt;li&gt;malware feed updates every hour&lt;/li&gt;
+&lt;li&gt;email alerts when a package here matches the feed, once you follow the
+confirmation link sent to you&lt;/li&gt;
+&lt;li&gt;safe-pkg, which checks every package install against the feed before it
+lands, and lists every file it edits before writing it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Declining installs nothing.&lt;/p&gt;
+&lt;p&gt;safe-pkg starts in &lt;strong&gt;block&lt;/strong&gt; mode: an install of a package that matches the
+malware feed is refused, and the refusal names the command that lets that one
+version through. To have those installs proceed and only be recorded, choose
+&lt;strong&gt;warn&lt;/strong&gt; when you customize the offer, or later run:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio safe-pkg enable --mode warn&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If safe-pkg is already enabled, accepting the offer keeps the mode it runs in.&lt;/p&gt;
+&lt;p&gt;To see what safe-pkg checked, and whether the daemon is running:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result installs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio status&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;On a protected machine, &lt;code&gt;dazio status&lt;/code&gt; reads like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/output/status.png&#34; alt=&#34;Sample output of dazio status: daemon running, feed updating, safe-pkg on in block mode, installs checked and no malware&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Check one command&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;check-one-command&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#check-one-command&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio protect -- npm install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This runs that one command with its installs checked against the feed, in
+block mode unless safe-pkg is already on, where it uses your mode. It leaves
+your package-manager config untouched. It needs the background daemon running
+and the feed enabled; without them it says it is running unprotected and runs
+the command unchecked.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>What it checks</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/what-it-checks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/what-it-checks/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Dazio does three things: it catches malware in the packages you install,
+including malware already on your machine, finds your exposed secrets, and
+flags toolchain settings worth changing. A one-time &lt;code&gt;dazio scan&lt;/code&gt; covers all
+three for your home folder. &lt;code&gt;dazio protect&lt;/code&gt; keeps checking in the background and
+checks installs before they land.&lt;/p&gt;
+&lt;h2&gt;Malware at install&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;malware-at-install&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#malware-at-install&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dazio checks packages as they install, and it also finds malware that landed
+before you installed Dazio. Both checks run on your machine, against a local copy
+of the threat feed.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Already on disk.&lt;/strong&gt; Every scan compares the packages in your home folder
+with the feed: what is installed, and what your projects&amp;rsquo; lockfiles pin. The
+scan needs a local feed copy. Your first &lt;code&gt;dazio scan&lt;/code&gt; downloads one once you
+accept the terms. &lt;code&gt;dazio feed enable&lt;/code&gt; keeps it updated: it takes your terms
+assent and your email, and requires analytics on. Updates start once you
+follow the emailed confirmation link. &lt;code&gt;dazio protect&lt;/code&gt; sets up the
+background service, feed updates and install checks in one go.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;At install.&lt;/strong&gt; Once installs are protected, each package is checked as your
+package manager downloads it, before any of its install scripts run. That
+covers installs your agent runs too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-amber-200 hx:bg-amber-100 hx:text-amber-900 hx:dark:border-amber-200/30 hx:dark:bg-amber-900/30 hx:dark:text-amber-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;strong&gt;Always-on protection blocks by default.&lt;/strong&gt; Accepting &lt;code&gt;dazio protect&lt;/code&gt; refuses
+known-malware installs; choose warn when you customize it to have them install
+and only be recorded. &lt;code&gt;dazio safe-pkg enable&lt;/code&gt; on its own still defaults to warn:
+a known-malware package installs, and the detection is recorded and reported,
+unless you pass &lt;code&gt;--mode block&lt;/code&gt;. On a machine
+where install protection is not enabled, &lt;code&gt;dazio protect -- &amp;lt;command&amp;gt;&lt;/code&gt;, for
+example &lt;code&gt;dazio protect -- npm install&lt;/code&gt;, runs that one command with its installs
+checked in block mode, without editing your package-manager config. It needs
+the background daemon running and the feed enabled; without them it says it is
+running unprotected and runs the command unchecked. Where install protection is
+enabled, &lt;code&gt;protect --&lt;/code&gt; uses the mode you chose.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Turning on install protection edits your package-manager configuration, and
+for some tools your shell&amp;rsquo;s &lt;code&gt;PATH&lt;/code&gt;. Dazio lists every file before it writes
+one and marks each edit with how to undo it. &lt;code&gt;dazio safe-pkg disable&lt;/code&gt; restores
+them all.&lt;/p&gt;
+&lt;h3&gt;Coverage by ecosystem&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;coverage-by-ecosystem&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#coverage-by-ecosystem&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Detected&lt;/strong&gt; means scans find a known-malware package already on disk.
+&lt;strong&gt;Protected&lt;/strong&gt; means installs are checked before the package lands.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Ecosystem&lt;/th&gt;
+					&lt;th&gt;Detected: what scans read&lt;/th&gt;
+					&lt;th&gt;Protected at install&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;npm&lt;/strong&gt; (npm, npx, pnpm, yarn, bun)&lt;/td&gt;
+					&lt;td&gt;Installed packages in &lt;code&gt;node_modules&lt;/code&gt; under your home folder, including global installs from nvm, fnm, volta and &lt;code&gt;~/.npm-global&lt;/code&gt;; the global packages &lt;code&gt;npm list --global&lt;/code&gt; reports, wherever they live; &lt;code&gt;package-lock.json&lt;/code&gt;, &lt;code&gt;yarn.lock&lt;/code&gt;, &lt;code&gt;pnpm-lock.yaml&lt;/code&gt;, &lt;code&gt;bun.lock&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes: npm, npx and pnpm through &lt;code&gt;~/.npmrc&lt;/code&gt;, yarn through &lt;code&gt;~/.yarnrc&lt;/code&gt; and &lt;code&gt;~/.yarnrc.yml&lt;/code&gt;, bun through a &lt;code&gt;PATH&lt;/code&gt; shim&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;PyPI&lt;/strong&gt; (pip, uv, uvx, poetry, pdm, pipx, pipenv)&lt;/td&gt;
+					&lt;td&gt;Installed packages under your home folder: virtualenvs, &lt;code&gt;pip --user&lt;/code&gt; (&lt;code&gt;~/.local/lib&lt;/code&gt;), pyenv, asdf, rye, uv, pipx, conda and poetry environments; the packages &lt;code&gt;pip list&lt;/code&gt; reports, wherever they live; &lt;code&gt;uv.lock&lt;/code&gt;, &lt;code&gt;poetry.lock&lt;/code&gt;, &lt;code&gt;Pipfile.lock&lt;/code&gt;, exact &lt;code&gt;==&lt;/code&gt; pins in &lt;code&gt;requirements.txt&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes: pip through &lt;code&gt;pip.conf&lt;/code&gt;, uv and uvx through &lt;code&gt;uv.toml&lt;/code&gt;, poetry, pdm and pipx through &lt;code&gt;PATH&lt;/code&gt; shims. pipenv has no dedicated hook.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;RubyGems&lt;/strong&gt; (gem, bundler)&lt;/td&gt;
+					&lt;td&gt;Installed gems under your home folder; &lt;code&gt;Gemfile.lock&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes, through &lt;code&gt;~/.gemrc&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Cargo&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Downloaded crates in the Cargo registry cache; &lt;code&gt;Cargo.lock&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes, through &lt;code&gt;~/.cargo/config.toml&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Go modules&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;The module cache; &lt;code&gt;go.mod&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes, through Go&amp;rsquo;s &lt;code&gt;GOPROXY&lt;/code&gt; setting. A &lt;code&gt;GOPROXY&lt;/code&gt; environment variable overrides it.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;NuGet&lt;/strong&gt; (dotnet, nuget)&lt;/td&gt;
+					&lt;td&gt;The global packages folder; &lt;code&gt;packages.lock.json&lt;/code&gt;, or &lt;code&gt;PackageReference&lt;/code&gt; entries in &lt;code&gt;.csproj&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Yes, through your user &lt;code&gt;NuGet.Config&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Composer&lt;/strong&gt; (PHP)&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;vendor/composer/installed.json&lt;/code&gt;; &lt;code&gt;composer.lock&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;VS Code, Cursor and Windsurf extensions&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Installed extensions&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Agent skills&lt;/strong&gt; (Claude, Codex and others)&lt;/td&gt;
+					&lt;td&gt;Installed skills, matched by name&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Homebrew&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;In progress&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Maven and Gradle&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;In progress&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Scans also list the MCP servers and CLI agents on your machine
+(&lt;code&gt;dazio result inventory&lt;/code&gt;). No malware verdict is given for them.&lt;/p&gt;
+&lt;h3&gt;What it does not see&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-it-does-not-see&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-it-does-not-see&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Install checks cover the package managers&amp;rsquo; normal downloads. Where they
+miss an install, the next scan&amp;rsquo;s on-disk check is the catch.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Packages outside your home folder.&lt;/strong&gt; Scans read files only under your home
+folder, so gems in Homebrew or system locations are not read. Global npm and
+pip installs are the exception, read through &lt;code&gt;npm list --global&lt;/code&gt; and &lt;code&gt;pip list&lt;/code&gt;, using the &lt;code&gt;npm&lt;/code&gt; and &lt;code&gt;pip&lt;/code&gt; first on the scan&amp;rsquo;s &lt;code&gt;PATH&lt;/code&gt;. Background scans
+run in the daemon, whose login service does not take your shell&amp;rsquo;s &lt;code&gt;PATH&lt;/code&gt;, so
+they can miss a Homebrew npm or pip; &lt;code&gt;dazio scan --local&lt;/code&gt; from your shell
+reads them. Installs outside your home folder are still checked at install.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;A warm cache.&lt;/strong&gt; An install served entirely from the package manager&amp;rsquo;s
+local cache makes no request, so there is nothing to check.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Project-level config.&lt;/strong&gt; A repository&amp;rsquo;s own &lt;code&gt;.npmrc&lt;/code&gt;, &lt;code&gt;pip.conf&lt;/code&gt; or similar
+file outranks your user file and can route around the check.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Registry changes after enabling.&lt;/strong&gt; A registry of your own set before
+&lt;code&gt;dazio safe-pkg enable&lt;/code&gt; is kept and installs from it are still checked. Point
+a package manager at a different registry afterwards and Dazio warns and
+leaves it alone, unchecked, rather than overriding it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;git and &lt;code&gt;file:&lt;/code&gt; dependencies&lt;/strong&gt;, and plain-&lt;code&gt;http://&lt;/code&gt; downloads, are not
+checked at install.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Shims need a new shell.&lt;/strong&gt; bun, poetry, pdm and pipx are covered through
+&lt;code&gt;PATH&lt;/code&gt; shims, which take effect in shells started after protection is enabled.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Network activity by install scripts&lt;/strong&gt; is not covered.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dazio runs on macOS and Linux. Windows and WSL2 are not supported.&lt;/p&gt;
+&lt;h2&gt;Exposed secrets&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;exposed-secrets&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#exposed-secrets&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;API keys in markdown files your agent wrote, tokens in shell history, forgotten
+&lt;code&gt;.env&lt;/code&gt; files: Dazio finds them before malware does. It reports &lt;strong&gt;where&lt;/strong&gt; each
+secret is, by file and line, and &lt;strong&gt;never its value&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Scans look in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.env&lt;/code&gt; files and shell history&lt;/li&gt;
+&lt;li&gt;git, SSH and GitHub CLI configuration&lt;/li&gt;
+&lt;li&gt;npm and PyPI credentials&lt;/li&gt;
+&lt;li&gt;cloud provider, Kubernetes and Docker configuration&lt;/li&gt;
+&lt;li&gt;infrastructure-as-code files&lt;/li&gt;
+&lt;li&gt;JetBrains IDE settings and WireGuard configuration&lt;/li&gt;
+&lt;li&gt;AI tools: stored credentials, chat logs, MCP server configuration and agent
+context files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;dazio result secrets&lt;/code&gt; lists each finding with its file and line.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/output/result-secrets.png&#34; alt=&#34;Sample output of dazio result secrets: findings grouped by type, each with its file and line and no value&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Toolchain hardening&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;toolchain-hardening&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#toolchain-hardening&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Package managers ship with safety settings off. Dazio finds each one and shows
+you exactly what to change. Every finding carries a &amp;ldquo;what to change&amp;rdquo; line.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Install cooldowns.&lt;/strong&gt; For npm, pnpm, yarn and npm-check-updates: whether a
+minimum release age is set, so freshly published and possibly compromised
+versions are not installed at once, and whether the tool is new enough to
+enforce one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Outdated npm.&lt;/strong&gt; npm too old for safe-by-default installs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pip settings.&lt;/strong&gt; Index URLs that embed credentials, indexes or &lt;code&gt;find-links&lt;/code&gt;
+over plain &lt;code&gt;http://&lt;/code&gt;, an &lt;code&gt;extra-index-url&lt;/code&gt; at all (a dependency-confusion
+risk), a &lt;code&gt;trusted-host&lt;/code&gt; that disables TLS verification, and a pip config file
+holding credentials that other users can read.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;~/.netrc&lt;/code&gt;&lt;/strong&gt; readable by other users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;IDE and agent hardening checks are in progress.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dazio result misconfig&lt;/code&gt; lists each finding and what to change.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>CLI and configuration reference</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/reference/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Every &lt;code&gt;dazio&lt;/code&gt; command, the flags you use, and the settings and environment
+variables it reads. &lt;code&gt;dazio &amp;lt;command&amp;gt; --help&lt;/code&gt; lists every flag in the binary you
+have, including a few internal ones left out here.&lt;/p&gt;
+&lt;h2&gt;Global flags&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;global-flags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#global-flags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;-v&lt;/code&gt; and &lt;code&gt;-h&lt;/code&gt; work on every command; &lt;code&gt;dazio daemon&lt;/code&gt; accepts &lt;code&gt;-v&lt;/code&gt; and ignores it.
+&lt;code&gt;--version&lt;/code&gt; works on &lt;code&gt;dazio&lt;/code&gt; alone: &lt;code&gt;dazio scan --version&lt;/code&gt; is an unknown flag.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Flag&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;-v&lt;/code&gt;, &lt;code&gt;--verbose&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;More log detail on stderr. &lt;code&gt;-v&lt;/code&gt; adds info lines and step timings; &lt;code&gt;-vv&lt;/code&gt; adds debug.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--version&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Print the version and the backend it talks to.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;-h&lt;/code&gt;, &lt;code&gt;--help&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Help for any command.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio --version
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan -v&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;See what was found&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;see-what-was-found&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#see-what-was-found&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;dazio scan&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-scan&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-scan&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The guided first scan, terse after; through the daemon when one runs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;With the daemon running, the daemon runs the scan and the CLI prints the result.&lt;/li&gt;
+&lt;li&gt;With no daemon and no earlier scan, it runs the guided first scan. That scan
+registers the installation, downloads the malware feed and ends with one
+offer of continuous protection. Declining installs nothing.&lt;/li&gt;
+&lt;li&gt;With no daemon after that, it runs a short scan in this process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Flag&lt;/th&gt;
+					&lt;th&gt;Default&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--local&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;off&lt;/td&gt;
+					&lt;td&gt;Run the scan in this process instead of asking the daemon. Fetches, registers and persists nothing. Use it for unattended runs.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--scope &amp;lt;scope&amp;gt;&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;full&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Daemon scan scope: &lt;code&gt;full&lt;/code&gt; or one group (&lt;code&gt;mcp&lt;/code&gt;, &lt;code&gt;ide_extensions&lt;/code&gt;, &lt;code&gt;cli_agents&lt;/code&gt;, &lt;code&gt;packages&lt;/code&gt;).&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--background&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;off&lt;/td&gt;
+					&lt;td&gt;Run the daemon scan at a polite background pace instead of full speed.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;off&lt;/td&gt;
+					&lt;td&gt;Print the full scan result as JSON instead of the summary.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan --local
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio scan --scope mcp&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;scan --local&lt;/code&gt; only checks against a malware feed already on disk. Without one,
+it reports &lt;code&gt;malware: NOT CHECKED&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;dazio result&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-result&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-result&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Summarize the latest scan of this machine.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Flag&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Print the full result as JSON instead of the summary.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;result&lt;/code&gt; and its subcommands work with the daemon stopped, reading what was last
+saved. All but &lt;code&gt;installs&lt;/code&gt; fail when no scan has run yet.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Each subcommand shows one part of the latest scan in detail.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+					&lt;th&gt;Purpose&lt;/th&gt;
+					&lt;th&gt;Flags&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio result secrets&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The secrets found, grouped by title: credentials readable by anything running as you, including your agents.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio result misconfig&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The misconfigurations found, grouped by title: settings that widen what an agent or a stolen token can do.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio result inventory&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The installed components, grouped by type, then provider.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--type &amp;lt;type&amp;gt;&lt;/code&gt; only this component type (e.g. &lt;code&gt;package&lt;/code&gt;, &lt;code&gt;ide_extension&lt;/code&gt;) · &lt;code&gt;--provider &amp;lt;provider&amp;gt;&lt;/code&gt; only this provider (e.g. &lt;code&gt;npm&lt;/code&gt;, &lt;code&gt;vscode&lt;/code&gt;) · &lt;code&gt;--paths&lt;/code&gt; show each component&amp;rsquo;s paths · &lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio result malware&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The malware matches, confirmed and indeterminate: packages on this machine that match the malware feed.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio result installs&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The packages safe-pkg checked at install time, and what it did.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--since &amp;lt;duration&amp;gt;&lt;/code&gt; how far back to read, as a Go duration such as &lt;code&gt;24h&lt;/code&gt; or &lt;code&gt;1h30m&lt;/code&gt; (default &lt;code&gt;168h&lt;/code&gt;, 7 days) · &lt;code&gt;--all&lt;/code&gt; every check, not only those that were not clean · &lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result secrets
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result inventory --type package --provider npm --paths
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result malware --json
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio result installs --since 24h --all&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio status&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-status&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-status&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Show daemon status. With no daemon running, it prints what was last known and
+exits 1.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Flag&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--json&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Print the status as JSON.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio status&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Protect&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;protect&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#protect&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;dazio protect&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-protect&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-protect&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Set up continuous protection: the background daemon, feed updates and alerts,
+and safe-pkg. It lists what it will run, watch, write and send before it asks.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio protect&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;dazio protect -- &amp;lt;command&amp;gt; [args ...]&lt;/code&gt; runs one command with its installs
+checked. It needs no &lt;code&gt;safe-pkg enable&lt;/code&gt; and writes no files, but it needs the
+daemon running, the feed enabled (&lt;code&gt;dazio feed enable&lt;/code&gt;) and safe-pkg serving:
+&lt;code&gt;safe_pkg_mode&lt;/code&gt; not &lt;code&gt;off&lt;/code&gt;, and a free port in its range. Without any of these,
+the command still runs, unchecked, after &lt;code&gt;dazio protect: running unprotected&lt;/code&gt;
+and the reason. Either way it exits with the command&amp;rsquo;s exit code. If the command
+cannot start at all, dazio prints its own error and exits 1.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio protect -- npm install&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio safe-pkg&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-safe-pkg&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-safe-pkg&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;safe-pkg checks package installs against the malware feed before they land. In
+&lt;code&gt;warn&lt;/code&gt; mode, the default for &lt;code&gt;safe-pkg enable&lt;/code&gt;, a known-malware package &lt;strong&gt;still
+installs&lt;/strong&gt; and the detection is recorded (see &lt;code&gt;dazio result installs&lt;/code&gt;). &lt;code&gt;block&lt;/code&gt;
+mode refuses it, and is what &lt;code&gt;dazio protect&lt;/code&gt; enables unless you pick warn.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+					&lt;th&gt;Purpose&lt;/th&gt;
+					&lt;th&gt;Flags&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio safe-pkg enable&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Protect installs: point this machine&amp;rsquo;s package managers at the local registry. It lists every file before writing and marks each edit with how to undo it. Needs the daemon running, the feed enabled, and &lt;code&gt;safe_pkg_mode&lt;/code&gt; not &lt;code&gt;off&lt;/code&gt; when the daemon started.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--mode &amp;lt;warn|block&amp;gt;&lt;/code&gt; what a malware verdict does (default &lt;code&gt;warn&lt;/code&gt;) · &lt;code&gt;--yes&lt;/code&gt; write the files without asking, for non-interactive and MDM runs&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio safe-pkg disable&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Un-write every file safe-pkg owns. Works with the daemon stopped.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio safe-pkg allow &amp;lt;package&amp;gt;@&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Let one blocked install through, once, in the next ~10 minutes. Needs the daemon running in &lt;code&gt;block&lt;/code&gt; mode, with safe-pkg enabled or a &lt;code&gt;dazio protect --&lt;/code&gt; command running.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio safe-pkg enable --mode block
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio safe-pkg allow left-pad@1.3.0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio safe-pkg disable&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To change the mode, run &lt;code&gt;dazio safe-pkg enable&lt;/code&gt; again with the new &lt;code&gt;--mode&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;code&gt;dazio feed&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-feed&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-feed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;With the feed enabled, the malware feed on this machine stays current, and you
+are emailed when a package here matches it. It needs an email address, confirmed
+by a link. Updates and alerts start once you follow that link. The feed requires
+analytics to be &lt;code&gt;on&lt;/code&gt;. Every &lt;code&gt;feed&lt;/code&gt; command except &lt;code&gt;terms&lt;/code&gt; needs the daemon
+running.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+					&lt;th&gt;Purpose&lt;/th&gt;
+					&lt;th&gt;Flags&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio feed enable&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Switch on the malware feed: accept the terms and bind an email address for alerts.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--email &amp;lt;address&amp;gt;&lt;/code&gt; the address to bind (asked for when omitted) · &lt;code&gt;--accept-terms&lt;/code&gt; accept the terms without asking, for non-interactive and MDM runs · &lt;code&gt;--enable-analytics&lt;/code&gt; turn analytics on if it is off (asked for when omitted)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio feed disable&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Switch the feed off and delete the local dataset. The email association is kept.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio feed refresh&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Fetch the malware feed and rebuild its local copy. Refused until the feed is enabled and the email address confirmed.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio feed terms&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Print the malware feed terms of use in full.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio feed terms
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio feed enable --email you@example.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio feed refresh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio feed disable&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Manage&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;manage&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#manage&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;&lt;code&gt;dazio service&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-service&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-service&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The background daemon scans on a schedule and on file changes, so you don&amp;rsquo;t
+have to remember to run a scan. &lt;code&gt;dazio service&lt;/code&gt; runs it as a login service:
+a LaunchAgent on macOS, a systemd user unit on Linux.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+					&lt;th&gt;Purpose&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio service install&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Register the daemon to start at login, and start it now.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio service uninstall&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Stop the daemon and remove the login service. It also undoes every safe-pkg edit.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio service status&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Report whether the login service is installed and running, and which binary it runs.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio service restart&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Ask the supervisor to restart the daemon on the binary now on disk. Run it after an upgrade on macOS; on Linux a Homebrew or mise upgrade needs &lt;code&gt;dazio service install&lt;/code&gt; instead. It exits 0 when there is nothing to restart.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;None of them take flags.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio service install
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio service status
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio service restart&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio daemon&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-daemon&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Run the background daemon in the foreground, logging to the terminal. For
+everyday use, run &lt;code&gt;dazio service install&lt;/code&gt; instead. It always logs at info;
+&lt;code&gt;-v&lt;/code&gt; has no effect here. It exits with an error if a daemon is already running.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio daemon&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio email&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-email&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-email&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Manage the email address the feed&amp;rsquo;s alerts go to.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Command&lt;/th&gt;
+					&lt;th&gt;Purpose&lt;/th&gt;
+					&lt;th&gt;Flags&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio email unbind&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Drop the email association and the terms assent. The feed goes off with them. Needs the daemon running.&lt;/td&gt;
+					&lt;td&gt;none&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;dazio email erase&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Ask the backend to erase an address. Erasure is confirmed by an emailed link. The request sends no installation token. Needs the daemon running.&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;--email &amp;lt;address&amp;gt;&lt;/code&gt; the address to erase (asked for when omitted)&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio email unbind
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio email erase --email you@example.com&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio reset&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-reset&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-reset&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Forget this installation: unregister it, then delete its identity, its email
+association (feed alerts stop), its pending uploads and the local malware feed
+store, and undo every safe-pkg edit. It cannot be undone, and it needs the
+daemon running.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Flag&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;--yes&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Confirm the reset. Required.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio reset --yes&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;&lt;code&gt;dazio completion&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dazio-completion&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dazio-completion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Generate the shell completion script for &lt;code&gt;bash&lt;/code&gt;, &lt;code&gt;zsh&lt;/code&gt;, &lt;code&gt;fish&lt;/code&gt; or &lt;code&gt;powershell&lt;/code&gt;.
+The Homebrew install already sets up completions. &lt;code&gt;dazio completion &amp;lt;shell&amp;gt; --help&lt;/code&gt;
+shows how to load the script.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio completion zsh &amp;gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;fpath[1]&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/_dazio&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Files and directories&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;files-and-directories&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#files-and-directories&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dazio keeps its state in one directory per user:&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;OS&lt;/th&gt;
+					&lt;th&gt;State directory&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;macOS&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;~/Library/Application Support/dazio/&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Linux&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;$XDG_CONFIG_HOME/dazio/&lt;/code&gt;, by default &lt;code&gt;~/.config/dazio/&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;It holds &lt;code&gt;settings.json&lt;/code&gt; (see below), &lt;code&gt;identity.json&lt;/code&gt;, the daemon log
+&lt;code&gt;daemon.log&lt;/code&gt;, the local malware feed store and scan results. On macOS it also
+holds &lt;code&gt;daemon.stderr.log&lt;/code&gt;, the daemon&amp;rsquo;s stderr; on Linux that goes to the
+journal (&lt;code&gt;journalctl --user -u dazio&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The daemon&amp;rsquo;s socket, &lt;code&gt;daemon.sock&lt;/code&gt;, lives in:&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;OS&lt;/th&gt;
+					&lt;th&gt;Runtime directory&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;macOS&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;~/Library/Caches/dazio/&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Linux&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;$XDG_RUNTIME_DIR/dazio/&lt;/code&gt;, falling back to &lt;code&gt;$XDG_CACHE_HOME/dazio/&lt;/code&gt;, by default &lt;code&gt;~/.cache/dazio/&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;code&gt;dazio service install&lt;/code&gt; writes the login service:&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;OS&lt;/th&gt;
+					&lt;th&gt;Service definition&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;macOS&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;~/Library/LaunchAgents/io.boostsecurity.dazio.plist&lt;/code&gt;, label &lt;code&gt;io.boostsecurity.dazio&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Linux&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;~/.config/systemd/user/dazio.service&lt;/code&gt;, managed with &lt;code&gt;systemctl --user&lt;/code&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;&lt;code&gt;settings.json&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;settingsjson&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#settingsjson&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;settings.json&lt;/code&gt; in the state directory holds your preferences. You can edit it
+by hand, or write it before the first run. Unset keys take their default. The
+daemon reads it when it starts, so after an edit run &lt;code&gt;dazio service restart&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Key&lt;/th&gt;
+					&lt;th&gt;Values&lt;/th&gt;
+					&lt;th&gt;Default&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;analytics&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;off&lt;/code&gt;, &lt;code&gt;local&lt;/code&gt;, &lt;code&gt;on&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;on&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;What is uploaded. &lt;code&gt;DO_NOT_TRACK&lt;/code&gt; overrides it.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;feed_enabled&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;The malware feed. It stays off unless &lt;code&gt;analytics&lt;/code&gt; is &lt;code&gt;on&lt;/code&gt;. Set by &lt;code&gt;dazio feed enable&lt;/code&gt;.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;safe_pkg_mode&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;warn&lt;/code&gt;, &lt;code&gt;block&lt;/code&gt;, &lt;code&gt;off&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;warn&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;What safe-pkg does with a malware verdict; any other value reads as &lt;code&gt;warn&lt;/code&gt;. &lt;code&gt;off&lt;/code&gt; stops the local registry and removes safe-pkg&amp;rsquo;s edits, and &lt;code&gt;safe-pkg enable&lt;/code&gt; then refuses until you change it and restart the daemon. &lt;code&gt;dazio safe-pkg enable --mode&lt;/code&gt; sets &lt;code&gt;warn&lt;/code&gt; or &lt;code&gt;block&lt;/code&gt;.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;full_interval&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Go duration&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;1h&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;How often the daemon rescans everything.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;group_interval&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Go duration&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;10m&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;How often the daemon rescans each group except &lt;code&gt;packages&lt;/code&gt;.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;heavy_group_interval&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Go duration&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;1h&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;How often the daemon rescans the &lt;code&gt;packages&lt;/code&gt; group.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;install_check_retention&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Go duration&lt;/td&gt;
+					&lt;td&gt;&lt;code&gt;720h&lt;/code&gt; (30 days)&lt;/td&gt;
+					&lt;td&gt;How long &lt;code&gt;dazio result installs&lt;/code&gt; history is kept.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;A duration that doesn&amp;rsquo;t parse reads as its default. A file that doesn&amp;rsquo;t parse,
+or an unknown &lt;code&gt;analytics&lt;/code&gt; value, is unreadable: analytics and the feed read as
+off, every other key as its default, and writes to it are refused, so
+&lt;code&gt;dazio feed enable&lt;/code&gt; and &lt;code&gt;dazio safe-pkg enable&lt;/code&gt; fail until you fix or remove it.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;analytics&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;local&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;safe_pkg_mode&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;block&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;full_interval&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;2h&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Environment variables&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;environment-variables&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#environment-variables&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Variable&lt;/th&gt;
+					&lt;th&gt;Effect&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DO_NOT_TRACK&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Any value other than empty, &lt;code&gt;0&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; turns uploads off for the process it is set in, whatever &lt;code&gt;settings.json&lt;/code&gt; says. Set in the daemon&amp;rsquo;s environment, it also stops the feed from being enabled.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DAZIO_NO_UPDATE_CHECK&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Same values as &lt;code&gt;DO_NOT_TRACK&lt;/code&gt;. Turns off the check for a newer release.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;NO_COLOR&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Turns off colored output.&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DAZIO_INSTALL_DIR&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Install script only: the directory to install into (default &lt;code&gt;~/.local/bin&lt;/code&gt;).&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;code&gt;DAZIO_VERSION&lt;/code&gt;&lt;/td&gt;
+					&lt;td&gt;Install script only: the release to install instead of the latest.&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The login service does not inherit your shell&amp;rsquo;s environment, so &lt;code&gt;DO_NOT_TRACK&lt;/code&gt;
+exported in a shell profile affects commands you run, but not the service
+daemon. To turn uploads off for the daemon too, set &lt;code&gt;&amp;quot;analytics&amp;quot;: &amp;quot;off&amp;quot;&lt;/code&gt; in
+&lt;code&gt;settings.json&lt;/code&gt; and run &lt;code&gt;dazio service restart&lt;/code&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>How it works &amp; privacy</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/privacy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Dazio runs on your machine. Scanning, the component inventory, the secrets and
+misconfigurations it finds, and your scan results all stay local.&lt;/p&gt;
+&lt;p&gt;The malware feed also lives on your machine, as a copy that Dazio
+refreshes every hour while the feed is on. Every package check runs against that local copy, so no
+package name is sent anywhere to be checked. That includes the checks safe-pkg
+runs at install time, through a local registry and a local HTTPS proxy. The
+proxy&amp;rsquo;s certificate authority never enters your system trust store.&lt;/p&gt;
+&lt;div role=&#34;img&#34; aria-label=&#34;Diagram&#34;&gt;
+  &lt;pre class=&#34;mermaid hx:mt-6&#34;&gt;
+    flowchart LR
+  subgraph machine[&amp;#34;Your machine&amp;#34;]
+    cli[&amp;#34;dazio CLI&amp;#34;] &amp;lt;--&amp;gt; daemon[&amp;#34;Background daemon&amp;#34;]
+    daemon --&amp;gt; feed[(&amp;#34;Local feed copy&amp;#34;)]
+    pm[&amp;#34;Package managers&amp;#34;] --&amp;gt; proxy[&amp;#34;safe-pkg local registry&amp;#34;] --&amp;gt; feed
+  end
+  daemon &amp;lt;-- &amp;#34;registration, feed updates, analytics if on&amp;#34; --&amp;gt; backend[&amp;#34;Dazio backend&amp;#34;]
+  cli -- &amp;#34;update check&amp;#34; --&amp;gt; backend
+  &lt;/pre&gt;
+&lt;/div&gt;&lt;h2&gt;What leaves the machine&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-leaves-the-machine&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-leaves-the-machine&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;With analytics on&lt;/strong&gt;, Dazio reports counts of what the scan finds and, on a
+malware match, the threat and the package name and version, tied to this
+installation. It also reports errors as a class, an operation name and the
+failure&amp;rsquo;s type, never a message, and that &lt;code&gt;dazio feed enable&lt;/code&gt; turned analytics
+on, when it did. It never sends file contents, paths, your package inventory or
+secrets.&lt;/p&gt;
+&lt;p&gt;A malware match is any time the feed matches a package on your machine: one a
+scan finds on disk, one safe-pkg warns about or blocks at install, or one you let
+through with &lt;code&gt;dazio safe-pkg allow&lt;/code&gt;. A match that later goes away is reported
+too.&lt;/p&gt;
+&lt;p&gt;Analytics is &lt;strong&gt;on by default&lt;/strong&gt;. The malware feed needs it, so turning analytics
+off also switches the feed off and stops its hourly updates. The guided first
+scan sends no analytics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Whatever the analytics setting:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Registration.&lt;/strong&gt; To download the feed, the installation registers once, on
+the first scan or when the daemon first starts, and receives a token.
+Registration sends the OS, the CPU architecture and the Dazio version.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The first-scan snapshot.&lt;/strong&gt; If you accept the feed terms, the guided first
+scan downloads one feed snapshot with that token. Hourly updates after it
+need the feed on, and so analytics.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Update check.&lt;/strong&gt; The CLI checks for a newer release at most every 15
+minutes once Dazio&amp;rsquo;s state folder exists; before that, on every command. The
+request is an anonymous &lt;code&gt;GET /v1/version&lt;/code&gt; that asks for the
+latest release: no token, no body, and not even the installed Dazio version.
+To turn it off, set &lt;code&gt;DAZIO_NO_UPDATE_CHECK=1&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Your email address&lt;/strong&gt;, only if you give one to &lt;code&gt;dazio feed enable&lt;/code&gt; or
+&lt;code&gt;dazio protect&lt;/code&gt;. It is used to confirm the address and to send malware
+alerts. &lt;code&gt;dazio email unbind&lt;/code&gt; drops it, and &lt;code&gt;dazio email erase&lt;/code&gt; asks for it
+to be erased.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As with any network request, the backend sees the IP address that connects to
+it.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dazio scan --local&lt;/code&gt; scans in-process and sends nothing, including
+registration and the update check.&lt;/p&gt;
+&lt;h2&gt;Turning analytics off&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;turning-analytics-off&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#turning-analytics-off&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;There is no &lt;code&gt;dazio&lt;/code&gt; command to turn analytics off yet. Set it in
+&lt;code&gt;settings.json&lt;/code&gt; in the Dazio state directory instead:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS: &lt;code&gt;~/Library/Application Support/dazio/settings.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Linux: &lt;code&gt;~/.config/dazio/settings.json&lt;/code&gt; (or &lt;code&gt;$XDG_CONFIG_HOME/dazio/&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Set the &lt;code&gt;analytics&lt;/code&gt; key to &lt;code&gt;off&lt;/code&gt;, and keep the other keys. If the file does
+not exist, create it with:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;analytics&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;off&amp;#34;&lt;/span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Then restart the daemon, which reads the setting only when it starts:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio service restart&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;DO_NOT_TRACK=1&lt;/code&gt; also turns analytics off, but only for the process that
+sees it: a &lt;code&gt;dazio&lt;/code&gt; command, or a daemon started from that shell. The daemon
+that starts at login does not read your shell&amp;rsquo;s environment, so exporting
+&lt;code&gt;DO_NOT_TRACK&lt;/code&gt; in your shell profile does not stop its uploads. Use
+&lt;code&gt;settings.json&lt;/code&gt; for that.&lt;/p&gt;
+&lt;p&gt;To stop everything, first run &lt;code&gt;dazio reset --yes&lt;/code&gt; while the daemon is still
+running: it unregisters this installation and deletes any uploads that have not
+been sent yet. Then &lt;code&gt;dazio service uninstall&lt;/code&gt; removes the daemon.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Uninstall</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/uninstall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/uninstall/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;1. Forget this installation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-forget-this-installation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-forget-this-installation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;While the daemon is still running, so the backend is told:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio reset --yes&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This unregisters the installation, then deletes its identity, email
+association, pending uploads and local malware feed, and restores every file
+safe-pkg edited. It cannot be undone.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;reset&lt;/code&gt; works through the daemon. If the daemon is not running, start it in
+another terminal, and stop it with Ctrl-C only once this step is done:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio daemon&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you bound an email address for alerts and &lt;code&gt;reset&lt;/code&gt; could not reach the
+backend, run &lt;code&gt;dazio email erase&lt;/code&gt; before step 2, while the daemon still runs:
+it asks the backend to erase the address, confirmed by a link sent to it.&lt;/p&gt;
+&lt;h2&gt;2. Remove the daemon&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-remove-the-daemon&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-remove-the-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dazio service uninstall&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;This first restores any file safe-pkg still has edited (shell and
+package-manager configuration), then stops the daemon and removes the login
+service. It works
+with the daemon stopped.&lt;/p&gt;
+&lt;p&gt;If you ran the daemon by hand rather than as a login service, &lt;code&gt;dazio safe-pkg disable&lt;/code&gt; restores safe-pkg&amp;rsquo;s files.&lt;/p&gt;
+&lt;h2&gt;3. Remove the binary&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-remove-the-binary&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-remove-the-binary&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Use the command for how you installed it.&lt;/p&gt;
+&lt;p&gt;Homebrew:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew uninstall dazio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Install script:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm ~/.local/bin/dazio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;If you set &lt;code&gt;DAZIO_INSTALL_DIR&lt;/code&gt;, remove &lt;code&gt;dazio&lt;/code&gt; from that directory instead.&lt;/p&gt;
+&lt;p&gt;mise:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mise unuse -g github:boostsecurityio/dazio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;4. Remove local data (optional)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-remove-local-data-optional&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-remove-local-data-optional&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Settings and logs stay on disk. To delete them:&lt;/p&gt;
+&lt;p&gt;macOS:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf ~/Library/Application&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Support/dazio ~/Library/Caches/dazio&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Linux:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_CONFIG_HOME&lt;span style=&#34;color:#66d9ef&#34;&gt;:-&lt;/span&gt;$HOME/.config&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dazio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_CACHE_HOME&lt;span style=&#34;color:#66d9ef&#34;&gt;:-&lt;/span&gt;$HOME/.cache&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dazio&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;XDG_RUNTIME_DIR&lt;span style=&#34;color:#66d9ef&#34;&gt;:-&lt;/span&gt;$HOME/.cache&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dazio&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/faq/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Which package managers does Dazio support?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;which-package-managers-does-dazio-support&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#which-package-managers-does-dazio-support&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Ecosystem&lt;/th&gt;
+					&lt;th&gt;Tools&lt;/th&gt;
+					&lt;th&gt;Malware found on disk&lt;/th&gt;
+					&lt;th&gt;Installs checked&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;npm&lt;/td&gt;
+					&lt;td&gt;npm, npx, pnpm, yarn, bun&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;PyPI&lt;/td&gt;
+					&lt;td&gt;pip, uv, uvx, poetry, pdm, pipx&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;RubyGems&lt;/td&gt;
+					&lt;td&gt;gem, bundler&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cargo&lt;/td&gt;
+					&lt;td&gt;cargo&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Go modules&lt;/td&gt;
+					&lt;td&gt;go&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;NuGet&lt;/td&gt;
+					&lt;td&gt;dotnet, nuget&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Composer&lt;/td&gt;
+					&lt;td&gt;composer&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Editor extensions&lt;/td&gt;
+					&lt;td&gt;VS Code, Cursor, Windsurf&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Agent skills&lt;/td&gt;
+					&lt;td&gt;Claude, Codex and others&lt;/td&gt;
+					&lt;td&gt;Yes&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Homebrew&lt;/td&gt;
+					&lt;td&gt;brew&lt;/td&gt;
+					&lt;td&gt;In progress&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Maven and Gradle&lt;/td&gt;
+					&lt;td&gt;mvn, gradle&lt;/td&gt;
+					&lt;td&gt;In progress&lt;/td&gt;
+					&lt;td&gt;No&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;../what-it-checks/#coverage-by-ecosystem&#34;&gt;What it checks&lt;/a&gt; has the full table,
+including what each scan reads and how each install is hooked.&lt;/p&gt;
+&lt;h2&gt;I already have antivirus, and my company runs an EDR. Why do I need this?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;i-already-have-antivirus-and-my-company-runs-an-edr-why-do-i-need-this&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#i-already-have-antivirus-and-my-company-runs-an-edr-why-do-i-need-this&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Keep them; they do a different job. Antivirus and EDR inspect binaries and
+catch code that&amp;rsquo;s already running. A malicious package is a plain-text script
+that arrives through a tool you trust, and it runs with your permissions the
+moment it installs. By the time an EDR notices anything, your tokens have
+already left.&lt;/p&gt;
+&lt;p&gt;Dazio checks each package as your package manager downloads it, before any of
+its install scripts run. Always-on protection refuses the install by default;
+warn mode records the detection and lets it proceed. See
+&lt;a href=&#34;../what-it-checks/#malware-at-install&#34;&gt;What it checks&lt;/a&gt; for the modes and for
+what install checks do not see.&lt;/p&gt;
+&lt;h2&gt;Does it run on my machine?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;does-it-run-on-my-machine&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#does-it-run-on-my-machine&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Dazio runs on macOS and Linux. Windows is not supported yet. See
+&lt;a href=&#34;../install/#supported-platforms&#34;&gt;Install&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Will it slow down my installs?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;will-it-slow-down-my-installs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#will-it-slow-down-my-installs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The check runs on your machine, against the local copy of the malware feed, so
+it adds no network round trip to the install.&lt;/p&gt;
+&lt;h2&gt;What leaves my machine?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-leaves-my-machine&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-leaves-my-machine&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;No package name is sent anywhere to be checked, and your code, secrets, file
+paths and package inventory stay local. With analytics on, the default, Dazio
+reports counts of what scans find, error classes, and on a malware match the
+threat and the package name and version. The malware feed needs analytics on:
+turning analytics off also stops the feed&amp;rsquo;s hourly updates. Registration, the
+update check and, once you accept the feed terms, the first scan&amp;rsquo;s feed
+snapshot happen whatever the analytics setting.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../privacy/&#34;&gt;How it works &amp;amp; privacy&lt;/a&gt; lists exactly what is sent, when, and how
+to turn analytics off.&lt;/p&gt;
+&lt;h2&gt;Why is it free?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-is-it-free&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-is-it-free&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Our friends and family all build with AI now. We built Dazio so the next attack
+skips them (and you). We believe in the power of free tools, so we&amp;rsquo;re keeping
+this one free.&lt;/p&gt;
+&lt;p&gt;For central management, reporting and support, Boost&amp;rsquo;s
+&lt;a href=&#34;https://boostsecurity.io/solution/developer-endpoint&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Developer Endpoint Protection&lt;/a&gt;
+adds them on top of everything Dazio does.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Changelog</title>
+      <link>https://boostsecurityio.github.io/dazio/docs/changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://boostsecurityio.github.io/dazio/docs/changelog/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Release notes for every version are on the
+&lt;a href=&#34;https://github.com/boostsecurityio/dazio/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dazio releases page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;dazio --version&lt;/code&gt; prints the version you have. &lt;a href=&#34;../install/&#34;&gt;Install&lt;/a&gt; covers
+upgrading.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
