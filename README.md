@@ -5,24 +5,12 @@
   </picture>
 </p>
 
-Dazio blocks malicious dependencies at install, finds exposed secrets before
+Dazio catches malicious dependencies at install, finds exposed secrets before
 malware does, and hardens your dev toolchain.
 
 Free.
 
-## What it does
-
-- **Blocks malware at install.** Every package is checked against a local copy
-  of the malware feed before it runs, and the bad ones are blocked with a note
-  on what was caught. Packages that landed before Dazio did are found too.
-- **Finds your exposed secrets.** API keys in files your agent wrote, tokens in
-  shell history, forgotten `.env` files. Dazio reports where they are, never
-  their values.
-- **Hardens your toolchain.** Package managers ship with their safety settings
-  off. Dazio finds each one and shows you exactly what to change.
-
-Installs are covered for npm, yarn, bun, pip, pipx, poetry, pdm, uv, Cargo,
-RubyGems, Go modules and NuGet.
+**📖 Documentation: [boostsecurityio.github.io/dazio](https://boostsecurityio.github.io/dazio/)**
 
 ## Install
 
@@ -38,90 +26,28 @@ Without Homebrew, on macOS or Linux:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/boostsecurityio/dazio/HEAD/install.sh)"
 ```
 
-That installs the [latest release](https://github.com/boostsecurityio/dazio/releases)
-into `~/.local/bin`, checking its checksum against the release's
-`checksums.txt`. Run it again to upgrade.
-
-Or with [mise](https://mise.jdx.dev):
-
-```sh
-mise use -g github:boostsecurityio/dazio
-```
-
-A mise upgrade replaces the binary without telling the daemon, so run
-`dazio service restart` after one if you have continuous protection on.
-
-## First scan
+[Install](https://boostsecurityio.github.io/dazio/docs/install/) covers
+upgrades, mise and the script's options. Then run your first scan:
 
 ```sh
 dazio scan
 ```
 
-The guided first scan walks you through it and prints what it found. Nothing
-is installed until you say so.
+## Learn more
 
-`dazio scan --local` runs the scan in this process alone: it fetches,
-registers and persists nothing.
+- [Quick start](https://boostsecurityio.github.io/dazio/docs/quick-start/):
+  the first scan and continuous protection
+- [What it checks](https://boostsecurityio.github.io/dazio/docs/what-it-checks/):
+  [malware](https://boostsecurityio.github.io/dazio/docs/what-it-checks/#malware-at-install),
+  [secrets](https://boostsecurityio.github.io/dazio/docs/what-it-checks/#exposed-secrets),
+  [toolchain hardening](https://boostsecurityio.github.io/dazio/docs/what-it-checks/#toolchain-hardening)
+  and [coverage by ecosystem](https://boostsecurityio.github.io/dazio/docs/what-it-checks/#coverage-by-ecosystem)
+- [CLI and configuration reference](https://boostsecurityio.github.io/dazio/docs/reference/)
+- [How it works & privacy](https://boostsecurityio.github.io/dazio/docs/privacy/)
+- [Uninstall](https://boostsecurityio.github.io/dazio/docs/uninstall/)
+- [FAQ](https://boostsecurityio.github.io/dazio/docs/faq/)
 
-## Continuous protection
-
-```sh
-dazio protect
-```
-
-One command sets up the whole thing, each part shown with what it implies
-before anything is written:
-
-- a background daemon, started at login, that keeps your scan current
-- hourly malware feed updates
-- alerts by email, once you follow the confirmation link
-- safe-pkg, which checks every package install before it lands
-
-Declining installs nothing.
-
-To check one command without enabling anything:
-
-```sh
-dazio protect -- npm install
-```
-
-## Commands
-
-```
-dazio scan        the guided first scan, terse after; through the daemon when one runs
-dazio result      summarize the latest scan of this machine
-dazio protect     set up continuous protection: background daemon, feed updates + alerts, safe-pkg
-dazio status      show daemon status
-dazio feed        manage the malware feed on this machine
-dazio safe-pkg    check package installs against the malware feed before they land
-dazio service     manage the daemon as a login-started service
-dazio reset       forget this installation: unregister, then delete identity and pending uploads
-```
-
-`dazio <command> --help` describes one command.
-
-## Privacy
-
-Dazio keeps the malware feed on your machine and checks packages there, so
-even package names stay put. Counts leave: packages per ecosystem, number of
-findings by severity. When Dazio blocks malware, it reports which threat and
-which package, nothing else. Your code, your secrets and your scan results
-stay with you.
-
-`DO_NOT_TRACK=1` disables telemetry and analytics.
-
-## Uninstall
-
-```sh
-dazio safe-pkg disable
-dazio reset --yes
-dazio service uninstall
-brew uninstall dazio        # or, installed by the script: rm ~/.local/bin/dazio
-```
-
-## Platforms and support
-
-macOS (Apple Silicon and Intel) and Linux (arm64 and amd64). Windows support is in the works.
+## Support
 
 Bugs and questions go to this repository's
 [Issues](https://github.com/boostsecurityio/dazio/issues). The source is
