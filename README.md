@@ -12,6 +12,8 @@ Free.
 
 **📖 Documentation: [boostsecurityio.github.io/dazio](https://boostsecurityio.github.io/dazio/)**
 
+**🐛 Bugs and questions: [open an issue](https://github.com/boostsecurityio/dazio/issues)**
+
 ## Install
 
 Homebrew, on macOS or Linux:
