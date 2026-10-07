@@ -28,6 +28,12 @@ Without Homebrew, on macOS or Linux:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/boostsecurityio/dazio/HEAD/install.sh)"
 ```
 
+On Windows 11, in PowerShell:
+
+```powershell
+irm https://raw.githubusercontent.com/boostsecurityio/dazio/HEAD/install.ps1 | iex
+```
+
 [Install](https://boostsecurityio.github.io/dazio/docs/install/) covers
 upgrades, mise and the script's options. Then run your first scan:
 
